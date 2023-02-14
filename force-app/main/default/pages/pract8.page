@@ -1,0 +1,13 @@
+<apex:page controller="pract8">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="Show list" action="{!demo}"/>
+        <apex:pageBlockTable value="{!cvar}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Phone__c}"/>
+            <apex:column value="{!acc.URL__c}"/>
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

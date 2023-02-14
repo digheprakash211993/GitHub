@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="fname" />
+    <design:attribute name="lname" datasource="value1,value2,value3" />
+</design:component>

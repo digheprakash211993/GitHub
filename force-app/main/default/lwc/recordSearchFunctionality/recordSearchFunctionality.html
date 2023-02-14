@@ -1,0 +1,19 @@
+<template>
+    <lightning-input label="Search Record" value={myvar} onchange={Mymethod}></lightning-input>
+<table>
+    <thead>
+ <tr><th>Name</th></tr>
+    </thead>
+   
+<tbody>
+    <template for:each={recordlist} for:item="rec1">
+        <tr key={rec1.id}>
+             <td>{rec1.Name}</td>
+        </tr>
+    </template>
+</tbody>
+
+   
+</table>
+
+</template>

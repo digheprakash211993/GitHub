@@ -1,0 +1,11 @@
+<apex:page controller="books" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:inputText value="{!str}"/>
+        <apex:commandButton value="button" action="{!good}"/>
+        
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

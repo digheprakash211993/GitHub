@@ -1,0 +1,24 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="record" type="Object"
+  description="The record object to be displayed"/>
+<aura:attribute name="simpleRecord" type="Object"
+  description="A simplified view record object to be displayed"/>
+<aura:attribute name="recordError" type="String"
+  description="An error message bound to force:recordData"/>
+<force:recordData aura:id="record"
+    fields="Name,Phone__c,URL__c"
+    recordId="{!v.recordId}"
+    targetError="{!v.recordError}"
+    targetRecord="{!v.record}"
+    targetFields ="{!v.simpleRecord}"
+    mode="VIEW"/>
+    
+    <lightning:card iconName="standard:Country__c" title="{!v.simpleRecord.Name}" >
+    <div class="slds-p-horizontal--small">
+        <p class="slds-text-heading--small">
+            <lightning:formattedText title="PHONE" value="{!v.simpleRecord.Phone__c}" /></p>
+        <p class="slds-text-heading--small">
+            <lightning:formattedText title="URL" value="{!v.simpleRecord.URL__c}" /></p>
+    </div>
+</lightning:card>
+</aura:component>

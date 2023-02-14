@@ -1,0 +1,10 @@
+<apex:page controller="redirectpg">
+    <apex:form >
+    <apex:pageBlock >
+        
+        <apex:commandButton value="Redirect page" action="{!directmethod}"/>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

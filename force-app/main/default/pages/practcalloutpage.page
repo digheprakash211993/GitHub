@@ -1,0 +1,8 @@
+<apex:page controller="practcallout">
+    <apex:form >
+    <apex:pageBlock >
+        {!str}
+        <apex:commandButton value="calldata" action="{!demo}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

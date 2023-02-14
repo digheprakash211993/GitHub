@@ -1,0 +1,24 @@
+<aura:component controller="onlinecode" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <ltng:require styles="/resource/SLDS0122/assets/styles/salesforce-lightning-design-system.min.css"/>`<aura:attribute name="newAccount" type="Account"
+     default="{ 'sobjectType': 'Object_A__c',
+                     'Name': 'ObjectName',
+                   }"/>
+<div>
+<form>
+      <ui:inputText aura:id="ObjectName" label="New record Name"
+                    class="slds-input"
+                    labelClass="slds-form-element__label"
+                    value="{!v.newrecord.Name}"
+                    required="true"/>
+
+<ui:button label="Submit" 
+                   class="slds-button slds-button--neutral"
+                   labelClass="label"
+                   press="{!c.createAccount}"/>
+          <ui:button label="Cancel" 
+                   class="slds-button slds-button--neutral"
+                   labelClass="label" press="{!c.Close}"/>
+</form>
+    </div>
+</aura:component>

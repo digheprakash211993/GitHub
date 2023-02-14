@@ -1,0 +1,14 @@
+<aura:component controller="Callinjs" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="str" type="string"/>
+    {!v.str}
+    <lightning:button variant="base" label="Search" title="Base action" onclick="{! c.handleClick }"/>
+    <aura:attribute name="int" type="integer"/>
+    {!v.int}
+    
+    <lightning:button variant="base" label="VIEW" title="Base action" onclick="{! c.handleClick1 }"/>
+    <aura:attribute name="Liststr" type="list"/>
+    <aura:iteration items="{!v.Liststr}" var="item">
+    {!item}<br/>
+    </aura:iteration>
+</aura:component>

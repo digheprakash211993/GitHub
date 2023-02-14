@@ -1,0 +1,15 @@
+<apex:page controller="Honey" action="{!data}">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:messages ></apex:messages>
+        
+        <apex:pageBlockTable value="{!demo}" var="acc">
+        <apex:column value="{!acc.name}"/>
+            <apex:column value="{!acc.Hotel_Name__c}"/>
+            <apex:column value="{!acc.Hotel_prise__c}"/>
+            <apex:column value="{!acc.Mobile_number__c}"/>
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

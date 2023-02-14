@@ -1,0 +1,13 @@
+<aura:component controller="hammer" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler  name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="str" type="string" default="King"/>
+    {!v.str}
+    
+    <lightning:input type="text" value="input1" label="Enter a value" aura:id="inputTagId" onchange="onInputValueChange" />
+    <div onclick="{! c.javascriptsale }" name="PRAKASH" class="ramm slds-size_1-of-2">
+    My name is salesforce.
+    </div> 
+    
+<lightning:button variant="Search" label="Base" title="Base action" /> 
+    <lightning:button variant="MOBILE" label="MOBILE" title="Base action" onclick="{! c.javascript }"/>
+</aura:component>

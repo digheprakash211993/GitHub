@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="dam1 slds-size_4-of-4">
+  <div class="slds-align_absolute-center">
+    <B>Welcome to Insurance! </B>
+  </div>
+</div>
+</aura:component>

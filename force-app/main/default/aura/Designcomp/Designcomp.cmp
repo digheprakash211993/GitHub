@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="fname" type="string"/>
+    <aura:attribute name="lname" type="string"/>
+    <aura:attribute name="phone" type="string"/>
+    {!v.fname}<br/>{!v.lname}<br/>{!v.phone}
+</aura:component>

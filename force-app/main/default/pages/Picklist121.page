@@ -1,0 +1,15 @@
+<apex:page controller="Picklist121" >
+    <apex:form >
+    <apex:pageBlock title="Picklist">
+        <apex:commandButton value="Search" action="{!demo}"/>
+        <apex:selectList size="1" value="{!str}">
+        <apex:selectOptions value="{!sobj}">
+            
+            
+            </apex:selectOptions>
+        
+        </apex:selectList>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

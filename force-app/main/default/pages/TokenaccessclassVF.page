@@ -1,0 +1,10 @@
+<apex:page controller="Tokenaccessclass">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="Call Token" action="{!accesstokenmethod}"/>
+        <b>Token access</b>:-{!acctoken}
+        <br/>
+         <b>URL access</b>:-{!urlinfo}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

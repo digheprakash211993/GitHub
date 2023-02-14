@@ -1,0 +1,13 @@
+<apex:page controller="reord" >
+    <apex:form >
+   <apex:pageBlock >
+        <apex:inputText value="{!str}"/>
+        <apex:commandButton value="Button" action="{!method}" />
+        
+        </apex:pageBlock>
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

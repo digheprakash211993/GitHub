@@ -1,0 +1,14 @@
+<apex:page controller="picklistlass">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="Search" action="{!demo}"/>
+        <apex:selectList size="1" value="{!str}">
+            <apex:selectOptions value="{!sobj}"/>
+        
+        
+        
+        </apex:selectList>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

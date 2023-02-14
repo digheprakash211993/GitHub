@@ -1,0 +1,10 @@
+<apex:page controller="PRACT3">
+    THIS IS  PRACTICAL!
+    {!str}
+    {!int1}
+    <apex:form >
+    <apex:pageBlock > 
+        <apex:commandButton value="Call method" action="{!method}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="States Details">
+        <table  class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col"><div class="slds-truncate" title="STATE Id">ID</div></th>
+                <th class="" scope="col"><div class="slds-truncate" title="STATE ParentId">Parent Id</div></th>
+                <th class="" scope="col"><div class="slds-truncate" title="STATE Name">Name</div></th>
+                <th class="" scope="col"><div class="slds-truncate" title="STATE PRISE">prise__c</div></th>
+                <th class="" scope="col"><div class="slds-truncate" title="STATE URL">URL</div></th>
+              </tr>
+        </thead>
+        
+        <tbody>
+        <template for:each={statelist.data} for:item="state">
+        <tr key={state.Id}>
+        <td><div>{state.Id}</div></td>
+        <td><div>{state.Country__c}</div></td>
+        <td><div>{state.Name}</div></td>
+        <td><div>{state.prise__c}</div></td>
+        <td><div>{state.URL__c}</div></td>
+        </tr>
+        </template>
+        </tbody>
+        
+        </table>
+        </lightning-card>
+</template>

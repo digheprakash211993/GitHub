@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:method name="sampleMethod" action="{!c.callAction}" access="public"> 
+    <aura:attribute name="param1" type="String" default="param1"/> 
+</aura:method>
+</aura:component>

@@ -1,0 +1,12 @@
+<apex:page >
+    <apex:includeLightning />
+    <div  id="prak"/>
+   <script>
+    $Lightning.use("c:VFPagecallcomp1",function(){
+    $Lightning.createComponent("c:VFPagecallcomp",{str:"Salesforce"},"prak",function(){
+    alert('Inside VF page');
+    });
+    });
+    </script>
+ 
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page controller="pan" >
+    welcome to page
+    <apex:form >
+    <apex:pageBlock >
+        {!p1}
+        <apex:commandButton value="call to method" action="{!demo}"/>
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+    
+    
+</apex:page>

@@ -1,0 +1,8 @@
+<apex:page controller="calloutclass">
+   <apex:form >
+    <apex:pageBlock >
+       {!str}
+        <apex:commandButton value="callout" action="{!demo}"/>
+       </apex:pageBlock>
+    </apex:form>
+</apex:page>

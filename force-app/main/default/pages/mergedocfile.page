@@ -1,0 +1,29 @@
+<apex:page controller="mergevfdoc" contentType="application/msword#filename.doc" sidebar="false" standardStylesheets="false"
+applyHtmlTag="true" applyBodyTag="false">
+<xml version="1.0" encoding="UTF-8"/>
+<request>
+  <param1>Hello World</param1>
+    <param2>Goodbye World</param2>
+</request>
+    
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+              <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Resume" />
+                 <apex:outputPanel > 
+                  <div class="requiredInput">
+                    <div class="requiredBlock"></div>
+                      <apex:inputFile value="{!attachment1Blob}" /><br/>  
+                      <div class="note"> doc, docx, txt, and pdf. Max 800 KB </div>
+
+                  </div>
+                </apex:outputPanel>
+           </apex:pageBlockSectionItem> 
+        </apex:pageBlockSection>
+        <apex:commandButton value="Save" action="{!save}"/>
+        <apex:outputText value="{!tempString}"></apex:outputText>
+    </apex:pageBlock>
+    </apex:form> 
+     
+</apex:page>

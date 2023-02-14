@@ -1,0 +1,12 @@
+<template>
+    <lightning-card variant="narrow" icon-name="standard:opportunity">
+        <lightning-combobox
+        name="Picklistval"
+        label="Picklist val"
+        value={value}
+        placeholder="Select Progress"
+        options={picklistvalues}
+        onchange={handleChange} ></lightning-combobox>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="oblclass slds-size_1-of-2" >
+     My name is prakash
+    </div>
+ 
+    
+<lightning:button variant="base" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+
+</aura:component>

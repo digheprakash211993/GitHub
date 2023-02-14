@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div onclick="{! c.handleClick }" name="xyz" class="pageclass slds-size_1-of-2" >
+    My name is king
+    </div>
+    <aura:attribute name="str" type="string" default="Prakash"/>
+    {!v.str}
+    <lightning:input type="text" value="" label="Enter a Input"  aura:id="Idtag" onchange="{! c.inputmethod }" />
+     <lightning:button variant="base" label="Mom" title="Base action" onclick="{! c.handleClick1 }"/>
+</aura:component>

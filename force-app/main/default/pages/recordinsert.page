@@ -1,0 +1,18 @@
+<apex:page controller="recordinsert" action="{!damm}">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:inputText value="{!data}"/>
+        <apex:commandButton value="search" action="{!demo}"/>
+        <apex:pageBlockTable value="{!data}" var="acc">
+            <apex:column value="{!acc.name}"/>
+            <apex:column value="{!acc.States__c}"/>
+            <apex:column value="{!acc.Phone__c}"/>
+            
+            
+        </apex:pageBlockTable>
+        
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

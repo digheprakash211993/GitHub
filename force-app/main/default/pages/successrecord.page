@@ -1,0 +1,14 @@
+<apex:page controller="successrecord" action="{!demo}">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:messages ></apex:messages>
+            <apex:pageblocktable value="{!damm}" var="acc">
+            <apex:column value="{!acc.Country_rigion__c}"/>
+            <apex:column value="{!acc.Phone__c}"/>
+                <apex:column value="{!acc.URL__c}"/>
+            
+            
+            </apex:pageblocktable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

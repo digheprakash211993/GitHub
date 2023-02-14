@@ -1,0 +1,33 @@
+<apex:page controller="fruit" >
+    <apex:form >
+    <apex:pageBlock >
+       <apex:pageBlockTable value="{!moon}" var="acc">
+           <apex:column value="{!acc.Hotel_Address__c}">
+           
+           </apex:column>
+        <apex:column value="{!acc.Hotel_MD__c}">
+           
+           </apex:column>
+        <apex:column value="{!acc.Hotel_Name__c}">
+           
+           </apex:column>
+           <apex:column value="{!acc.Hotel_prise__c}">
+           
+           </apex:column>
+           <apex:column value="{!acc.Mobile_number__c}">
+           
+           </apex:column>
+        </apex:pageBlockTable>
+       
+        
+       
+        
+        
+        </apex:pageBlock>
+    
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

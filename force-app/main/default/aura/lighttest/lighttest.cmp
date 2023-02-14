@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="dam slds-size_1-of-3" >
+    My name is prakash
+     </div>
+    
+    <div class="dam1 slds-size_2-of-3">
+    My name is prakash
+    </div>
+    <div class="slds-clearfix pink">
+  <div class="slds-float_right">
+    My name is prakash
+    </div>
+    </div>
+    <lightning:button variant="destructive" label="Destructive" title="Destructive action" onclick="{! c.calljsmethod}"/>
+
+ 
+</aura:component>

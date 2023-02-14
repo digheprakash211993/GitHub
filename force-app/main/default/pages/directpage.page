@@ -1,0 +1,10 @@
+<apex:page standardController="Object_B__c" extensions="directpage">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:inputField value="{!Object_B__c.name}"/>
+        <apex:commandButton value="Save" action="{!data}"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

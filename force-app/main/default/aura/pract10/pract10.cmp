@@ -1,0 +1,6 @@
+<aura:component controller="pract10class" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="str" type="string"/>
+    <lightning:input type="Text" Value="" label="Enter a Text" aura:id="idtag" />
+    <lightning:button variant="base" label="Insert Rec" title="Base action" onclick="{! c.handleClick }"/>
+
+</aura:component>

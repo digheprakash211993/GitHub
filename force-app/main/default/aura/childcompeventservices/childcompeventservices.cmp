@@ -1,0 +1,4 @@
+<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	 <aura:registerEvent name="cmpEvent" type="c:Parenttochildcompevent1"/>
+<lightning:input type="Search" label="Search Hotel Name" aura:id="Enter" value=''  onchange="{!c.firecomponent}" />
+</aura:component>

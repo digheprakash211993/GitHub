@@ -1,0 +1,28 @@
+<apex:page controller="URL" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!str}" var="acc">
+        <apex:column headerValue="Account Name">{!acc.Name}</apex:column>
+            
+            <apex:column headervalue="URL" >
+           <apex:outputLink value="{!acc.URL__c}">{!acc.URL__c}</apex:outputLink>
+            </apex:column>  
+            
+            <apex:column headervalue="view">
+                <apex:outputLink value="/{!acc.id}">view</apex:outputLink>
+                </apex:column>
+            
+               <apex:column headervalue="Edit">
+          <apex:outputLink value="/{!acc.id}">Edit</apex:outputLink>
+        </apex:column>
+            
+        </apex:pageBlockTable>
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+</apex:page>

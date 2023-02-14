@@ -1,0 +1,9 @@
+<aura:component controller="Pract7calljs" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="cvar" type="list"/>
+    <aura:iteration items="{!v.cvar}" var="item">
+      <p>{!item.Name}</p>
+        <p>{!item.Id}</p>
+        <p>{!item.Phone__c}</p>
+    </aura:iteration>
+    <lightning:button variant="base" label="Show data" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

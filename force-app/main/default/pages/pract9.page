@@ -1,0 +1,13 @@
+<apex:page controller="pract9">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!cvar}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.District_Name__c}"/>
+            <apex:column value="{!acc.prise__c}"/>
+        
+        </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

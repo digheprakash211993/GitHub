@@ -1,0 +1,42 @@
+<apex:page controller="URL1" >
+    <apex:form >
+    <apex:pageBlock >
+        
+        <apex:pageBlockTable value="{!demo}" var="pmm">
+        <apex:column headerValue="Hotel Name">{!pmm.Hotel_Name__c}</apex:column>
+            
+            <apex:column headerValue="Hotel Address__c">
+              <apex:outputLink value="{!pmm.Hotel_Address__c}">{!pmm.Hotel_Address__c}</apex:outputLink>
+             </apex:column>  
+            
+            <apex:column headerValue="View">
+                <apex:outputLink value="/{!pmm.id}">view</apex:outputLink>
+             </apex:column>
+            
+        <apex:column headerValue="Edit">
+                <apex:outputLink value="/{!pmm.id}">Edit</apex:outputLink>
+             </apex:column>
+            
+        <apex:column headerValue="delete">
+                <apex:outputLink value="/{!pmm.id}">delete</apex:outputLink>
+             </apex:column>
+            
+            
+     
+        
+        
+        </apex:pageBlockTable>
+        
+        
+        
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

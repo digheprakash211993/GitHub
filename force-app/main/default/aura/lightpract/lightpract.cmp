@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="str" type="string" default="Rom" />
+    {!v.str}
+    
+    <div onclick="{!c.jsmethod}" name="xyz" class="dam slds-size_1-of-2 ">
+    My name is prakash dighe
+    </div>
+   
+     <lightning:button variant="base" label="Base" title="Base action" />
+    <lightning:button variant="Prakash" label="Prakash" title="Base action" onclick="{!c.demo}" />
+   
+</aura:component>

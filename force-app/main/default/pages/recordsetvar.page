@@ -1,0 +1,26 @@
+<apex:page standardController="Country__c" recordSetVar="acc">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:outputLabel value="View:"/>
+        <apex:selectList value="{!filterId}" size="1"/>
+        <apex:actionSupport event="onchange" rerender="list"/>
+        <apex:selectOptions value="{!listviewoptions}"/>
+        <apex:actionSupport event="onchange" rerender="list"/>
+       
+        <apex:pageBlockTable value="{!acc}" var="c1">
+            <apex:column headerValue="name" value="{!c1.name}"/>
+             <apex:column headerValue="Phone__c" value="{!c1.Phone__c}"/>
+             <apex:column headerValue="URL__c" value="{!c1.URL__c}"/>
+        <apex:pageBlockSection >
+      <apex:dataList var="a" value="{!acc}" id="list">
+        {!a.name}
+      </apex:dataList>
+    </apex:pageBlockSection>
+        
+        </apex:pageBlockTable>
+        
+            
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

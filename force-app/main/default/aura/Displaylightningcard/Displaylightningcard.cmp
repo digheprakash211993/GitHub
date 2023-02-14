@@ -1,0 +1,21 @@
+<aura:component controller="displayrecord" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="prak" type="list"/>
+   
+        <div class="slds-grid slds-wrap">
+         <aura:iteration items="{!v.prak}" var="item">
+             <div class="slds-size_1-of-3">
+             <lightning:card  title="Country Name">
+        <td>{!item.Name}</td>
+                 <!--<img src="{!$Resource.rahane}"/>-->
+                 <lightning:formattedRichText value="{!item.Image__c}"/>
+                 <aura:set attribute="footer">
+             <lightning:badge label="Contact"/>
+                      <lightning:badge label="Support"/>
+                      <lightning:badge label="Sales"/>
+        </aura:set>
+                 </lightning:card>
+                 </div>
+        </aura:iteration>
+    </div>
+</aura:component>

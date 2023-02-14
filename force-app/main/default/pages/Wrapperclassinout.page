@@ -1,0 +1,14 @@
+<apex:page controller="Wrapperclassinout">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!demo}" var="acc">
+            <apex:column headerValue="First name" value="{!acc.fname}"/>
+            <apex:column headerValue="Last name" value="{!acc.lastname}"/>
+            <apex:column headerValue="Country name" value="{!acc.cobj.name}"/>
+            <apex:column headerValue="Hotel name" value="{!acc.hobj.name}"/>
+        
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

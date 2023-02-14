@@ -1,0 +1,13 @@
+<apex:page controller="wrappinout">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!demo}" var="acc">
+        <apex:column value="{!acc.fname}"/>
+            <apex:column value="{!acc.lastname}"/>
+            <apex:column value="{!acc.Cobj.name}"/>
+            <apex:column value="{!acc.hobj.name}"/>
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="Firstname" />
+    <design:attribute name="Lastname" datasource="value1,value2,value3" />
+</design:component>

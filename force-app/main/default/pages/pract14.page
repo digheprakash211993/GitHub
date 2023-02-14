@@ -1,0 +1,8 @@
+<apex:page controller="pract14">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="insert" action="{!demo}"/>
+        <apex:inputText value="{!str}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

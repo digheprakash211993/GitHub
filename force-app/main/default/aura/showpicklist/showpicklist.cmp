@@ -1,0 +1,13 @@
+<aura:component controller="valuepicklist" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute type="List" name="aclistobj"/>
+    <aura:attribute type="String" name="str"/>
+    <aura:attribute type="List" name="Picklistobj"/>
+    
+    <aura:attribute type="Object_B__c" name="acobj" default='{"sobjecttype":"Object_B__c"}'/>
+    <lightning:input label="Enter the name" value="{!v.acobj.Name}" required="true"/>    
+    
+    <lightning:combobox name="Select Name" label="Select value" value="{!v.acobj.Pick_value__c}" placeholder="Select Progress" options="{!v.Picklistobj}" />
+    <lightning:button label="Insert account" onclick="method1"/>
+    <lightning:combobox name="Select Name" label="Status" value="{!v.str}" placeholder="Select Progress" options="{!v.aclistobj}" onchange="{! c.handleChange }"/>
+</aura:component>

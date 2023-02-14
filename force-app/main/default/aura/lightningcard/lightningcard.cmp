@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="slds-size_1-of-2 ">
+    <lightning:card title="Hello Prakash">
+        <aura:set attribute="footer">
+            <lightning:button label="Add to card"/>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+        <div class="slds-grid slds-gutters">
+  <div class="slds-col">
+    <span><img src="{!$Resource.rolexo}" /></span>
+  </div>
+  <div class="slds-col">
+    <span>
+        <b> Name: Rolex <br/>
+        Price: 1 lacs <br/>
+        Colour: Blue <br/>
+        Varient: Diamond <br/> </b> 
+      
+      </span>
+  </div>
+  
+</div>
+            
+        
+    </lightning:card>
+        </div>
+</aura:component>

@@ -1,0 +1,16 @@
+<apex:page controller="pract6">
+    <apex:form >
+    <apex:pageBlock title="Country Record">
+       
+        <apex:pageBlockTable value="{!cvar}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Country_rigion__c}"/>
+            <apex:column value="{!acc.Phone__c}"/>
+            <apex:column value="{!acc.URL__c}"/>
+            <apex:column value="{!acc.Ticket_prise__c}"/>
+        
+        </apex:pageBlockTable>
+     
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

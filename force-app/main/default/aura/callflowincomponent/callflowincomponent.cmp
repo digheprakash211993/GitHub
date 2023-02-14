@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <Lightning:flow  aura:id="prak"/>
+    <Lightning:button label="Call to Flow" onclick="{!c.method1}"/>
+</aura:component>

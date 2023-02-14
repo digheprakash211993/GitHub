@@ -1,0 +1,7 @@
+<aura:component controller="comprec" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Conobj" type="Object_B__c" default="{'Sobjecttype':'Object_B__c'}"     />
+    
+    <lightning:input label="Name"  value="{!v.Conobj.Name}" />
+    
+    <lightning:button type="button" name="insert" onclick="{!c.Method5}" title="Base action" label="insert" />
+</aura:component>

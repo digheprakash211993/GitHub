@@ -1,0 +1,26 @@
+<template>
+<lightning-card title="Country Details">
+<table  class="slds-table slds-table_cell-buffer slds-table_bordered">
+<thead>
+    <tr class="slds-line-height_reset">
+        <th class="" scope="col"><div class="slds-truncate" title="Country Id">ID</div></th>
+        <th class="" scope="col"><div class="slds-truncate" title="Country Name">Name</div></th>
+        <th class="" scope="col"><div class="slds-truncate" title="Country Email">Email</div></th>
+        <th class="" scope="col"><div class="slds-truncate" title="Country Phone">Phone</div></th>
+      </tr>
+</thead>
+
+<tbody>
+<template for:each={cmplist.data} for:item="comp">
+<tr key={comp.Id}>
+<td><div>{comp.Id}</div></td>
+<td><a data-id={comp.Id} onclick={getcompdetails} class="slds-hint-parent">{comp.Name}</a></td>
+<td><div>{comp.Email__c}</div></td>
+<td><div>{comp.Phone__c}</div></td>
+</tr>
+</template>
+</tbody>
+
+</table>
+</lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<aura:component controller="initclass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="str" type="string" default="Rani" />
+    <aura:attribute name="mann" type="string" />
+    <aura:attribute name="int" type="integer" />
+    {!v.mann}
+     {!v.int}
+    <div onclick="{! c.method1 }" name="PQR" class="damm slds-size_1-of-2">
+  This salesforce lightning.
+    </div>
+    <lightning:button variant="search" label="search" title="Base action"/>
+    <lightning:button variant="run" label="run" title="Base action"  onclick="{! c.method2 }"/>
+    <lightning:button variant="run" label="run" title="Base action"  onclick="{! c.method3 }"/>
+    
+</aura:component>

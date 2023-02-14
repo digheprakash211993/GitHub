@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="recordlist" type="List"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <table>
+    <thead>
+      <tr> 
+        <th>Name</th>
+        <th>Phone</th>
+        <th>URL</th>
+          <th>Remove</th>
+        </tr>
+        </thead>
+        
+        <aura:iteration indexVar="Indexchar" items="{!v.recordlist}" var="Rcc">
+        <tbody>
+        <tr> 
+            <td>{!Rcc.Name}</td>
+            <td>{!Rcc.Phone}</td>
+            <td>{!Rcc.URL}</td>
+            <td>
+            <div name="{!Indexchar}" onclick="{!c.Removerowmethod}">
+                Remove  
+            </div>
+            
+            
+            </td>
+        </tr>
+        </tbody>
+        </aura:iteration>
+    
+    
+    
+    </table>
+        
+ 
+    
+    
+    
+    
+    
+    
+</aura:component>

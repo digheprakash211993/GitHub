@@ -1,0 +1,14 @@
+<apex:page controller="rack" >
+    <apex:form >
+   <apex:pageBlock >
+       <apex:inputText value="{!mann}"/>
+        
+        
+   
+        </apex:pageBlock>
+    
+    
+    
+    
+    </apex:form>
+</apex:page>

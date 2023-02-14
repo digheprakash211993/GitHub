@@ -1,0 +1,12 @@
+<apex:page controller="countrymainclasss">
+    <apex:form >
+<apex:pageBlock >
+        <apex:pageBlockTable value="{!cobj}" var="acc">
+           <apex:column value="{!acc.Name}"/> 
+            
+    </apex:pageBlockTable>
+      
+        </apex:pageBlock>
+   
+    </apex:form>
+</apex:page>

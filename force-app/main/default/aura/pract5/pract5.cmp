@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="str" type="string" default="prakash" />
+    {!v.str}
+    <lightning:input type="text" value="" label="Enter a INPUT" aura:id="idtag" onchange="{! c.handleClick1 }" />
+    <lightning:button variant="base" label="Search" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

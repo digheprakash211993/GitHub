@@ -1,0 +1,29 @@
+<aura:component controller="Removecustrecord" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="namerem" type="List" />
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_striped">
+    <thead>
+        <tr>
+        <th>Name</th>
+             <th>Pnone</th>
+         <th>URL</th>
+        </tr>
+    </thead>
+        
+        <aura:iteration indexVar="removechar" items="{!v.namerem}" var="item">
+      <tbody>
+        <tr>
+         <td>{!item.Name}</td>
+         <td>{!item.Phone__c}</td>
+         <td>{!item.URL__c}</td>
+            <td><div onclick="{!c.removebutton}"  name="{!removechar}">  Remove</div></td>
+            
+         </tr>
+  </tbody>
+       </aura:iteration> 
+       
+    </table>
+    
+    
+    
+    <lightning:button variant="Show record" label="Show record" title="Base action" onclick="{! c.Buttonclick }"/>
+</aura:component>

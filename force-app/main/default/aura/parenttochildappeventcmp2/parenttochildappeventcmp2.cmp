@@ -1,0 +1,15 @@
+<aura:component controller="myaccount" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:handler event="c:parenttochildappevent" action="{!c.method2}"/>
+    <aura:attribute name="show1" type="list"/>
+	<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+    <thead>
+        <tr><th>Record Name</th></tr>
+    </thead>
+        
+        <aura:iteration items="{!v.show1}" var="item">
+        <tbody>
+            <tr><td>{!item.LastName}</td></tr>
+        </tbody>
+        </aura:iteration>
+    </table>
+</aura:component>

@@ -1,0 +1,21 @@
+<apex:page standardController="Country__c">
+    <apex:form >
+<apex:pageBlock >
+        <apex:pageBlockSection >
+    <apex:inputField value="{!Country__c.Name}"/>
+    <apex:inputField value="{!Country__c.Country_MD__c}"/>
+            <apex:inputField value="{!Country__c.Phone__c}"/>
+            <apex:inputField value="{!Country__c.URL__c}"/>
+            <apex:commandButton value="Save" action="{!save}"/>
+    <apex:commandButton value="Delete" action="{!delete}"/>
+            <apex:commandButton value="Saverec" action="{!quicksave}"/>
+            <apex:commandButton value="cancel" action="{!cancel}"/>
+            <apex:commandButton value="list" action="{!list}"/>
+            <apex:commandButton value="edit" action="{!edit}"/>
+            
+    </apex:pageBlockSection>
+        
+        
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="record" type="Object" />
+<aura:attribute name="simpleRecord" type="Object" />
+<aura:attribute name="recordError" type="String" />
+<force:recordData aura:id="recordEditor"
+    fields="Name,Phone__c,States__c,URL__c"
+    recordId="{!v.recordId}"
+    targetError="{!v.recordError}"
+    targetRecord="{!v.record}"
+    targetFields ="{!v.simpleRecord}"
+    mode="EDIT" />
+    
+    <lightning:card iconName="action:edit" title="Edit Account">
+        <div class="slds-p-horizontal--small">
+            <lightning:input label="Country Name" value="{!v.simpleRecord.Name}"/>
+            <br/>
+            <lightning:button label="Save Account" variant="brand" onclick="{!c.handleSaveRecord}" />
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,14 @@
+<aura:component controller="prakashtest11">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="str" type="string" default="Mom"/>
+    {!v.str}
+    <aura:attribute name="str1" type="string" default="Mom"/>
+    {!v.str1}
+    <div onclick="{! c.method1 }" name="XYZ" class="divclass slds-size_1-of-2 "> 
+    My name is mobile.
+    </div>
+    
+    <lightning:button variant="search" label="search" title="Base action"/>
+    <lightning:button variant="Run" label="Run" title="Base action" onclick="{! c.method2 }" />
+   
+</aura:component>

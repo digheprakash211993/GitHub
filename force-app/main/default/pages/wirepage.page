@@ -1,0 +1,15 @@
+<apex:page controller="wire" >
+    <apex:form >
+   <apex:pageBlock >
+        <apex:inputText value="{!str}"/>
+        <apex:commandButton value="button" action="{!method}"/>
+            
+        
+        
+        
+        </apex:pageBlock>    
+    
+    
+    
+    </apex:form>
+</apex:page>

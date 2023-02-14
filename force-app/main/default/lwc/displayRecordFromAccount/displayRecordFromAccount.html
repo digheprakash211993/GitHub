@@ -1,0 +1,20 @@
+<template>
+    <table  class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Industry</th>
+          </tr>
+        </thead>
+        <tbody>
+        <template for:each={accvar} for:item="acc">
+            <tr key={acc.Id}>
+            <td>{acc.Name}</td>
+            <td>{acc.Phone}</td>
+            <td>{acc.Industry}</td>
+        </tr>
+        </template> 
+    </tbody>
+    </table>
+</template>

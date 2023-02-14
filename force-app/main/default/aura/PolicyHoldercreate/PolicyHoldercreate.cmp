@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:Navigation  aura:id="Navid"/>
+    <aura:attribute name="recordError" type="String" access="private"/>
+    <force:recordData aura:id="recordHandler"
+     recordId="{!v.recordId}"
+    fields="Id"
+    targetError="{!v.recordError}"/>
+   <lightning:button variant="brand" label="Create Record" title="Base action" onclick="{!c.handleClick}"/> 
+    <lightning:button label="Edit Record" iconName="utility:edit" iconPosition="left"  variant="brand" onclick="{!c.editrecord}"/>
+    <lightning:button variant="brand-outline" label="Insurance Website" title="Base action" onclick="{!c.Navigatemethod}"/>
+     <div class="slds-p-horizontal--small">
+         <lightning:button label="Delete Record" iconName="utility:delete" iconPosition="left"  variant="destructive" onclick="{!c.handleDeleteRecord}" />
+        </div>
+    
+</aura:component>

@@ -1,0 +1,10 @@
+<apex:page controller="countryinput" >
+    <apex:form >
+   <apex:pageBlock >
+       {!demo}
+        <apex:commandButton value="insert" action="{!d1}"/>
+        <apex:inputText value="{!demo}"/>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

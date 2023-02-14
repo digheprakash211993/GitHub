@@ -1,0 +1,22 @@
+<apex:page controller="bat" >
+    <apex:form >
+    <apex:pageBlock >
+       
+        <apex:pageBlockTable value="{!mat}" var="acc">
+            
+            <apex:column Value="{!acc.name}">
+            </apex:column>
+        <apex:column Value="{!acc.industry}">
+             </apex:column>
+          <apex:column Value="{!acc.phone}">
+            </apex:column>
+                
+    </apex:pageBlockTable>
+        
+        
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page standardController="Object_B__c" extensions="redirecttopage">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:inputField value="{!Object_B__c.name}"/>
+            <apex:commandButton value="save" action="{!data}"/>
+            
+       
+        
+        </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

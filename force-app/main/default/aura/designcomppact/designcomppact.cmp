@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Firstname" type="string" />
+    <aura:attribute name="Lastname" type="string" />
+    {!v.Firstname}<br/>{!v.Lastname}
+</aura:component>

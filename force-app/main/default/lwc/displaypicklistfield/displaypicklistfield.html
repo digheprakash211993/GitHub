@@ -1,0 +1,18 @@
+<template>
+    <lightning-card
+        title="WireGetFieldValue"
+        icon-name="standard:account">
+        <template if:true={account.data}>
+            <div>
+         <p><lightning-formatted-text value={revenue} ></lightning-formatted-text></p>
+            </div>
+            <lightning-checkbox-group name="Checkbox Group"
+                              label="Checkbox Group"
+                              options={picklist}
+                              value={selectedControlling}
+                              ></lightning-checkbox-group>
+                              <lightning-input label="" class="slds-p-left_xx-large" value={revenue} type="checkbox" checked={checkboxVal} onchange={handleChange} >
+                            </lightning-input>
+        </template>
+    </lightning-card>
+</template>

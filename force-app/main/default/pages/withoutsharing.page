@@ -1,0 +1,13 @@
+<apex:page controller="withoutsharing">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!cobj}" var="acc">
+            <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Object_B__c}"/>
+        
+        </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

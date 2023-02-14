@@ -1,0 +1,17 @@
+<apex:page >
+    <apex:form >
+        <apex:page >
+        
+        <apex:pageBlock >
+            <apex:commandButton value="save" action="{!method"/>
+            
+            
+            
+            </apex:pageBlock>
+        
+        
+        </apex:page>
+    
+    
+    </apex:form>
+</apex:page>

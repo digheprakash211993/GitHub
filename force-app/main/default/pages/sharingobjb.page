@@ -1,0 +1,11 @@
+<apex:page controller="sharingobjb">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!objB}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Phone_No__c}"/>
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

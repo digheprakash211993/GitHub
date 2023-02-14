@@ -1,0 +1,8 @@
+<apex:page controller="pract18">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="UPDATE" action="{!demo}"/>
+       
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

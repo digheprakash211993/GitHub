@@ -1,0 +1,14 @@
+<apex:page controller="usernamePWDflow">
+    <apex:form >
+    <apex:pageBlock >
+        {!accToken}
+        <apex:commandButton value="Call token" action="{!method1}"/>
+        <apex:pageBlockTable value="{!accrecords}" var="acc">
+        <apex:column value="{!acc.Id}"/>
+            <apex:column value="{!acc.Name}"/>
+            <apex:column value="{!acc.Industry}"/>
+            <apex:column value="{!acc.Phone}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

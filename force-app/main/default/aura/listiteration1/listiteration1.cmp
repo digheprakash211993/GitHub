@@ -1,0 +1,45 @@
+<aura:component controller="initclass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+      <aura:handler name="init" value="{!this}" action="{!c.method4}"/>
+    <aura:attribute name="Countryname" type="list" /> 
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+      <thead>
+         <tr >
+            <th>Name</th>
+            <th>Phone</th>
+            <th>URL</th>
+             <th>View</th>
+             <th>Edit</th>
+        </tr>
+    </thead>
+    <aura:iteration items="{!v.Countryname}" var="item">
+   <tbody>
+         <tr>
+       <td>
+           <a  onclick="{!c.divmethod}" data-prak="{!item.Id}" type="string">
+           {!item.Name}
+           </a>
+             </td>
+             <td>{!item.Phone__c}</td>
+             <td>{!item.URL__c}</td>
+             
+             <td>
+             <lightning:buttonIcon iconName="utility:preview" variant="bare" onclick="{! c.handleClickview }" alternativeText="Settings" value="{!item.Id}" title="Settings" /></td>
+             <td><a href="{!'/'+item.Id+'/e'}">Edit</a></td>
+             
+              <td><div onclick="{!c.editmethod}" name="{!item.Id}">
+              <lightning:icon iconName="action:edit" size="xx-small" alternativeText="Approved" title="Approved" />
+             </div></td>
+             
+             <td><div data-recid="{!item.Id}" class="slds-truncate" onclick="{!c.deletemethod}">
+             <lightning:icon iconName="action:delete" size="xx-small" alternativeText="Delete" title="Delete" />
+             </div></td>
+             
+       </tr>       
+    </tbody>
+    </aura:iteration>
+    </table>
+   
+    <!--<lightning:button variant="run" label="run" title="Base action"  onclick="{! c.method3 }"/>-->
+    <lightning:button label="Display list" onclick="{!c.method4}"/>
+    
+</aura:component>

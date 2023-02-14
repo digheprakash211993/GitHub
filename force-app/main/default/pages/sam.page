@@ -1,0 +1,19 @@
+<apex:page controller="cat" >
+  <apex:form >
+    <apex:pageBlock >
+        {!str}
+      <apex:commandButton value="method class" action="{!demo}" />
+      
+      
+      
+      </apex:pageBlock>
+    
+    
+    
+    
+    </apex:form>
+    
+    
+        
+    
+</apex:page>

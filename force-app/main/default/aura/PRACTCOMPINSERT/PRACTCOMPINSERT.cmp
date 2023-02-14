@@ -1,0 +1,7 @@
+<aura:component controller="PRACTCOMP" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="objins" type="Object_B__c" default="{'sobjecttype':'Object_B__c'}" />
+    <lightning:input type="Record" name="Insert" value="{!v.objins.Name}" label="Enter a record" />
+    
+    <lightning:button variant="Insert" label="Insert" title="Base action" onclick="{! c.Method2 }"/>
+</aura:component>

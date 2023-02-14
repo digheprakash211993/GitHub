@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <b>This is from component</b>
+    
+    
+ <lightning:navigation  aura:id="prak"/>
+    
+ <lightning:button variant="base" label="Navigate second comp" title="Base action" onclick="{! c.handleClick }"/>
+  <lightning:button variant="base" label="Navigate service app" title="Base action" onclick="{! c.handleClick1 }"/>
+  
+    
+</aura:component>

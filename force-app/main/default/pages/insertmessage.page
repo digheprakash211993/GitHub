@@ -1,0 +1,28 @@
+<apex:page controller="insertmessage">
+    <apex:form >
+    <apex:pageBlock title="Record list">
+        <apex:messages ></apex:messages>
+        <apex:inputText value="{!liststr}"/>
+        <apex:commandButton value="insert" action="{!demo}"/>
+        <apex:pageBlockTable value="{!cobj }" var="acc">
+            <apex:column value="{!acc.name}"/>
+            <apex:column value="{!acc.Country_rigion__c}"/>
+            <apex:column value="{!acc.Phone__c}"/>
+           <apex:column value="{!acc.URL__c}"/>
+        
+        
+        
+        
+        
+        
+        
+        </apex:pageBlockTable>
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+</apex:page>

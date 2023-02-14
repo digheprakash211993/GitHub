@@ -1,0 +1,14 @@
+<aura:component controller="Inputmethod" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="recordname" type="list"/>
+    <lightning:input type="string" name="find" label="Enter some text" onchange="{!c.Searchengine}"/>
+    <ul class="slds-has-dividers_bottom slds-has-block-links_space">
+         <aura:iteration items="{!v.recordname}" var="item">
+  <li class="slds-item">
+      
+    <a href="#">{!item.Name}</a>
+  </li>
+        </aura:iteration>
+    </ul>
+    
+    
+</aura:component>

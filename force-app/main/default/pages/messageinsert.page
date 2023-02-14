@@ -1,0 +1,24 @@
+<apex:page controller="messageinsert" action="{!demo}">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:inputText value="{!str}"/>
+        <apex:messages ></apex:messages>
+        <apex:commandButton value="search" action="{!demo}"/>
+        <apex:pageBlockTable value="{!data}" var="acc">
+            <apex:column value="{!acc.name}"/>
+            <apex:column value="{!acc.Hotel_Name__c}"/>
+        <apex:column value="{!acc.Mobile_number__c}"/>
+            <apex:column value="{!acc.Hotel_MD__c}"/>
+        
+        
+        
+        
+        </apex:pageBlockTable>
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

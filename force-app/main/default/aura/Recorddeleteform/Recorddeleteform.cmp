@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordError" type="String" access="private"/>
+<force:recordData aura:id="recordHandler"
+    recordId="{!v.recordId}"
+    fields="Id"
+    targetError="{!v.recordError}"
+    />
+    
+    <lightning:card iconName="action:delete" title="Delete Record">
+        <div class="slds-p-horizontal--small">
+            <lightning:button label="Delete Record" variant="destructive" onclick="{!c.handleDeleteRecord}"/>
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component controller="classinsert" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    
+   <lightning:input type="Record" name="Insert" value="" label="Enter a record" aura:id="inputaura" />
+    
+    <lightning:button variant="Insert" label="Insert" title="Base action" onclick="{! c.Method2 }"/>
+</aura:component>

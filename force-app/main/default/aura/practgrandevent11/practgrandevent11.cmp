@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler phase="capture" name="cmpEvent" event="c:practevent" action="{!c.handleComponentEvent1}"/>
+    <c:practevent1/>
+</aura:component>

@@ -1,0 +1,26 @@
+<apex:page controller="child">
+    Welcome in india
+    <apex:form >
+    <apex:pageBlock >
+        
+      <apex:pageBlockTable value="{!mat}" var="ann">
+          <apex:column value="{!ann.Hotel_Address__c}">
+          </apex:column>
+        <apex:column value="{!ann.Hotel_Name__c}">
+          </apex:column>
+        <apex:column value="{!ann.Hotel_prise__c}">
+          </apex:column>
+        
+        </apex:pageBlockTable>
+       
+        
+        
+        
+        </apex:pageBlock>
+    
+      
+    
+    </apex:form>
+    
+ 
+</apex:page>

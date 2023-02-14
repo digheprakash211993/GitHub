@@ -1,0 +1,17 @@
+<apex:page controller="countrymethod">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!demo}" var="acc">
+        <apex:column value="{!acc.id}"/>
+            <apex:column value="{!acc.Country_rigion__c}"/>
+            <apex:column value="{!acc.States__c}"/>
+        
+        </apex:pageBlockTable>
+        
+        
+        
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

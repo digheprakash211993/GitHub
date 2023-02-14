@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="buttonlabel" type="string"/>
+    <lightning:Navigation  aura:id="Navid"/>
+    <div class="height:100%; width:100% slds-box slds-grid slds-color-picker slds-size_1-of2 prak">
+        <div class="prak">
+    <lightning:button variant="brand-outline" label="Agent" title="Base action"  onclick="{!c.handleClick}"/><br/>
+    <lightning:button variant="brand-outline" label="Policy Holder" title="Base action"  onclick="{! c.handleClick1 }"/><br/>
+    <lightning:button variant="brand-outline" label="Life Insurance" title="Base action"  onclick="{! c.handleClick2 }"/><br/>
+    <lightning:button variant="brand-outline" label="Motor Insurance" title="Base action"  onclick="{! c.handleClick3 }"/><br/>
+    <lightning:button variant="brand-outline" label="Payments" title="Base action"  onclick="{! c.handleClick4 }"/>
+        </div>
+        </div>
+</aura:component>

@@ -1,0 +1,17 @@
+<apex:page controller="picklist1">
+    <apex:form >
+        <apex:pageBlock title="Picklist">
+            <apex:selectList size="1">
+                <apex:selectOptions value="{!optionslst}"></apex:selectOptions>            
+            
+            
+            
+            
+            </apex:selectList>
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+    
+    
+</apex:page>

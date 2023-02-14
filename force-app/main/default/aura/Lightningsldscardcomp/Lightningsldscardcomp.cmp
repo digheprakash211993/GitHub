@@ -1,0 +1,32 @@
+<aura:component controller="Lightningsldscard" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="str" type="string"/>
+    
+     <div class="slds-grid slds-wrap">
+    <aura:iteration items="{!v.str}" var="item">
+        <div class="slds-size_1-of-3">
+            <lightning:card footer="Card Footer" title="Lightning card">{!item.Name}<br/>{!item.India_Region__c}
+          <aura:set attribute="footer">
+            <lightning:button label="Add To Cart"/>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+           
+    <div class="slds-grid">
+  <div class="slds-col slds-p-horizontal_medium">
+      <!--<span><img src="{!$Resource.apple}"/></span>-->
+      <lightning:formattedRichText value="{!item.ImageApple__c}" />
+  </div>
+  <div class="slds-col slds-p-horizontal_medium">
+    <span><b>Name: APPLE</b><br/>
+      <b>Price: 2 Crore</b><br/>
+      <b>Colour: Black</b><br/>
+      <b>Share Prise: 1234$</b><br/></span>
+  </div>
+</div>
+       </lightning:card>
+            </div> 
+    </aura:iteration>
+    </div>
+</aura:component>

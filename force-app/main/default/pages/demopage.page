@@ -1,0 +1,12 @@
+<apex:page controller="dog" >
+    <apex:form >
+    <apex:pageBlock >
+       {!p1}
+      <apex:commandButton value="calling class method" action="{!demo}"/>
+        
+        
+        
+        
+        </apex:pageBlock>   
+    </apex:form>  
+</apex:page>

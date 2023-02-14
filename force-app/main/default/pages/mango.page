@@ -1,0 +1,20 @@
+<apex:page controller="mob">
+    <apex:form >
+    <apex:pageBlock >
+        {!d1}
+        <apex:commandButton value="button" action="{!dam}"/>
+       
+        
+        
+       
+        
+       
+        
+        </apex:pageBlock>
+    
+    
+    
+    </apex:form>
+    
+    
+</apex:page>

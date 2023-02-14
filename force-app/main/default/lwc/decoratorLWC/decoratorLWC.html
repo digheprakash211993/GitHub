@@ -1,0 +1,11 @@
+<template>
+    {str}<br/>
+    <template for:each={wiredAccounts.data} for:item="acc">
+        <p key={acc.id}>
+             {acc.Name}
+        </p>
+   </template>
+   <br/>
+    <lightning-input value={str} onchange={Inputchange}></lightning-input>
+<lightning-button label="show" onclick={Handleclick}></lightning-button>
+</template>

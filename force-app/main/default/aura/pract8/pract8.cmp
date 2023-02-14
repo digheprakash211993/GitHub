@@ -1,0 +1,32 @@
+<aura:component controller="pract8jscall" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="str" type="list"/>
+     
+   <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+    <thead>
+        <tr>  
+        <th>Id</th>
+        <th>Name</th>
+         <th>Phone</th>
+        </tr>
+    </thead>
+       
+    <aura:iteration items="{!v.str}" var="item">
+      <tbody>
+          
+        <td>
+         <div onclick="{! c.onClickmethod }" data-recid="{!item.Id}">
+          {!item.Id}
+         </div>
+         </td>
+         
+          
+         <td>{!item.Name}</td>
+          <td>{!item.Phone__c}</td>
+      </tbody>  
+    </aura:iteration>
+    
+    
+    </table>    
+    
+    <lightning:button variant="base" label="Search" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

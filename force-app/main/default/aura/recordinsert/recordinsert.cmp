@@ -1,0 +1,12 @@
+<aura:component controller="Insertconrecord" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    
+    <lightning:input label="Country name"  value=""  aura:id="inputauraid" />
+  
+    <lightning:button variant="Insert" label="Insert" title="Base action" onclick="{! c.insertmethod }"/>
+
+    
+    
+    
+    
+</aura:component>

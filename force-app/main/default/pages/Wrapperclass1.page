@@ -1,0 +1,14 @@
+<apex:page controller="Wrapperclass1">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!wobj}" var="acc">
+        <apex:column value="{!acc.cobj.name}"/>
+        <apex:column value="{!acc.sobj.name}"/>
+            
+        </apex:pageBlockTable>
+        
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

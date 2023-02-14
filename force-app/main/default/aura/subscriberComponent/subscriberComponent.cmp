@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordNamevalue" type="String"/>
+    <aura:attribute name="recordDatavalue" type="String"/>
+    <lightning:formattedText value="{!v.recordNamevalue}" />
+    <lightning:formattedText value="{!v.recordDatavalue}" />
+    <lightning:messageChannel type="abcd__c"
+            onMessage="{!c.handleChanged1}" scope="APPLICATION"/>
+</aura:component>

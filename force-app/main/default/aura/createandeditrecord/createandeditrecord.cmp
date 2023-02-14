@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    
+    
+    <lightning:Navigation  aura:id="Navid"/>
+    
+   <lightning:button variant="brand" label="Create" title="Base action" onclick="{!c.handleClick}"/> 
+    <lightning:button variant="brand" label="Edit" title="Base action" onclick="{!c.editrecord}"/>
+    <lightning:button variant="brand" label="Navigate" title="Base action" onclick="{!c.Navigatemethod}"/>
+     <lightning:button variant="brand" label="Movetorecordpage" title="Base action" onclick="{!c.Navigatemethod1}"/>
+    <lightning:button variant="brand" label="Navigatetoobject" title="Base action" onclick="{!c.Navigatemethod2}"/>
+</aura:component>

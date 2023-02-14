@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <lightning:button variant="Button" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="render" value="{!this}" action="{!c.doRender}"/>
+    <aura:attribute name="str" type="string" default="Prakash"/>
+    Bound Expression {!v.str} <br/>
+    UN-Bound Expression {#v.str} 
+</aura:component>

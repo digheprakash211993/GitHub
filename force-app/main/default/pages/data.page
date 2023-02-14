@@ -1,0 +1,15 @@
+<apex:page controller="sun" >
+    <apex:form >
+    <apex:pageBlock >
+        {!query}
+        <apex:commandButton value="in button" action="demo"/>
+        
+        
+        
+        
+        
+        </apex:pageBlock>
+   
+    </apex:form>
+    
+</apex:page>

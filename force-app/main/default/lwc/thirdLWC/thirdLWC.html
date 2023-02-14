@@ -1,0 +1,9 @@
+<template>
+    {recordId}<br/>
+    {inputvar}
+
+    <template for:each={accrecord} for:item="acc">
+        <p key={acc.Id}>{acc.Name}</p>
+    </template>
+    <lightning-input value=""  onchange={Handlechange}></lightning-input>
+</template>

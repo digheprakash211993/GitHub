@@ -1,0 +1,17 @@
+<apex:page standardController="Object_C__c" extensions="standardcontrol">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:inputField value="{!Object_C__c.name}"/>
+        <apex:commandButton value="search" action="{!demo}"/>
+      
+        </apex:pageBlockSection>
+        
+        </apex:pageBlock>>
+        
+        
+       
+    
+    </apex:form>
+    
+</apex:page>

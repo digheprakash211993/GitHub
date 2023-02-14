@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler event="c:applicationevent1event" action="{!c.handleApplicationEvent}"/>
+   
+    <aura:attribute name="str" type="string"/>
+     <div style="background-color:white;border:2px solid cyan" >
+    {!v.str}
+        </div>
+</aura:component>

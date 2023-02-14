@@ -1,0 +1,17 @@
+<aura:component controller="picklistcomboclass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute type="List" name="clistobj"/>
+    <aura:attribute type="String" name="str"/>
+    <aura:attribute type="List" name="pickistobj"/>
+    
+    <aura:attribute type="Country__c" name="cobj" default='{"sobjecttype":"Country__c"}'/>
+    <lightning:input label="Enter the name" value="{!v.cobj.Name}" required="true"/>
+    <lightning:input label="Enter the Phone" value="{!v.cobj.Phone__c}" />
+    
+    
+    
+ <lightning:combobox name="Enter country region picklist value" label="Country region" value="{!v.cobj.Country_rigion__c}" placeholder="Select Progress" options="{!v.pickistobj}" />   
+<lightning:button label="Insert Account" onclick="Method1"/>
+ <lightning:combobox name="Enter picklist value" label="Status" value="{!v.str}" placeholder="Select Progress" options="{!v.clistobj}" onchange="{!c.handleChange}"/>
+
+</aura:component>

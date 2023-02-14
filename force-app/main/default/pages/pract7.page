@@ -1,0 +1,9 @@
+<apex:page controller="pract7" >
+    <apex:form >
+    <apex:pageBlock >
+       <apex:inputText value="{!str}"/>
+        <apex:commandButton value="click" action="{!demo}"/>
+     
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

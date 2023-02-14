@@ -1,0 +1,20 @@
+<aura:component controller="customevent" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:handler event="c:EventcustApplicationevent1" action="{!c.handleApplicationEvent}"/>
+    <aura:attribute name="oppshow" type="list"/>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+    <thead>
+          <tr>   
+           <th>Name</th>        
+        </tr>
+    </thead>
+    <aura:iteration items="{!v.oppshow}" var="item">
+    <tbody>
+         <tr> 
+             <td> {!item.LastName}</td>
+              
+        </tr>
+     </tbody>
+            </aura:iteration>
+ </table>
+
+</aura:component>

@@ -1,0 +1,13 @@
+<apex:page controller="outerinnerclass">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!llist}" var="acc">
+        <apex:column headerValue="Name" value="{!acc.fname}"/>
+            <apex:column headerValue="Age" value="{!acc.age}"/>
+            <apex:column headerValue="Country name" value="{!acc.cobj.name}"/>
+            <apex:column headerValue="Hotel name" value="{!acc.hobj.name}"/>
+        </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

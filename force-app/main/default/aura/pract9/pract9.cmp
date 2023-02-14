@@ -1,0 +1,37 @@
+<aura:component controller="pract9jscall" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="str" type="List"/>
+   <aura:iteration items="{!v.str}" var="item">
+        {!item.Name}<br/>
+    </aura:iteration>
+    
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+    <thead>
+        <tr class="slds-line-height_reset">
+        <th>Name</th>
+        <th>Phone</th>
+         <th>URL</th>
+            <th>View</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+     <aura:iteration items="{!v.str}" var="item">
+     <tbody>
+         <tr class="slds-line-height_reset">
+        <td>
+            <a  onclick="{! c.divmethod }" name="{!item.Id}">
+        {!item.Name}
+        </a>
+             </td>
+           
+          <td>{!item.Phone__c}</td>
+          <td>{!item.URL__c}</td>
+             <td><lightning:buttonIcon iconName="utility:preview" variant="bare" onclick="{! c.handleClick2 }" value="{!item.id}" alternativeText="View" title="Settings" /></td>
+             <td><a href="{'/'+item.Id+'/e'}">Edit</a></td>
+             </tr>
+    </tbody>
+    </aura:iteration>
+    
+    </table>
+   
+    <lightning:button variant="base" label="Showdata" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

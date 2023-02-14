@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="messageFromEvent" type="String"/>
+    {!v.messageFromEvent}
+<aura:handler event="c:applicationevntpract1" action="{!c.handleApplicationEvent}"/>    
+</aura:component>

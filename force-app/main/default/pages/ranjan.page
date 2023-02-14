@@ -1,0 +1,23 @@
+<apex:page controller="ranjan" >
+    <apex:form >
+      <apex:pageBlock >
+       <apex:pageBlockTable value="{!accobj}" var="pdd">
+           <apex:column headerValue="Account name">{!pdd.Name}</apex:column>
+           <apex:column headerValue="Phone number">{!pdd.Phone}</apex:column>
+           
+           <apex:column headerValue="URL Name">
+            <apex:outputLink value="{!pdd.URL__c}">{!pdd.URL__c}</apex:outputLink> 
+           </apex:column>
+            </apex:pageBlockTable>
+         <apex:pageBlockTable value="{!accobj}" var="stt">
+             <apex:column headerValue="Account staff"> </apex:column>
+             <apex:column headerValue="Phone number"> </apex:column>
+             <apex:column headerValue="Address"> </apex:column>
+             
+          </apex:pageBlockTable>
+          
+          
+          
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

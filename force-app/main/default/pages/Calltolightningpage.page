@@ -1,0 +1,11 @@
+<apex:page >
+    <apex:includeLightning />
+    <div id="prak"/>
+    <script>
+    $Lightning.use("c:VFCOMP1",function(){
+    $Lightning.createComponent("c:VFCOMP",{str:'salesfoce'},"prak",function(){
+    alert('Inside in the VF Page');
+    });
+    });
+    </script>
+</apex:page>

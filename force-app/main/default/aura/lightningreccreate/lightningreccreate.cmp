@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:recordEditForm recordId="a0F8c00000jRXeH" objectApiName="Object_C__c">
+        <lightning:messages />
+        <lightning:outputField fieldName="Object_B__cId" />
+        <lightning:inputField fieldName="Name" />
+        <lightning:inputField fieldName="Object_B__c" />
+        <lightning:inputField fieldName="India_Region__c" />
+        <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update" />
+    </lightning:recordEditForm>
+</aura:component>

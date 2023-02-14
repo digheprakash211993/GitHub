@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:handler event="c:Comp1Applicationevent1" action="{!c.handleApplicationEvent}"/>
+    <aura:attribute name="inputvar" type="string" />
+                    <div style="background-color:purple;border:2px solid cyan">{!v.inputvar}</div>
+</aura:component>

@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:empApi aura:id="empApi" />
+    <lightning:input aura:id="channel" label="channel" name="channel" type="text" value="/event/Notification__e"/>
+    <lightning:button label="Subscribe" onclick="{! c.subscribe }" />
+    
+</aura:component>

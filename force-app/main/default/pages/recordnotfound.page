@@ -1,0 +1,18 @@
+<apex:page controller="recordnotfound">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:messages ></apex:messages>
+        <apex:inputText value="{!str}"/>
+        <apex:commandButton value="Search" action="{!demo1}"/>
+        <apex:pageBlockTable value="{!data}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Country_rigion__c}"/>
+            <apex:column value="{!acc.Phone__c}"/>
+            <apex:column value="{!acc.URL__c}"/>
+        
+        
+        
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

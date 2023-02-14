@@ -1,0 +1,22 @@
+<aura:component controller="classpractical" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+   <aura:handler  name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="prak" type="String" />
+    {!v.prak}
+    <aura:attribute name="int" type="String" />
+    {!v.int}
+    <aura:attribute name="atr" type="String" default="Nishant"/>
+    {!v.atr}
+    
+    <aura:attribute name="c111" type="list" />
+    <aura:iteration items="{!v.c111}" var="item">
+        {!item.Name}<br/>
+    </aura:iteration>
+    
+    <div onclick="{! c.parrot }" name="Mango" class="sam slds-size_1-of-2" >
+    My name is Rock.
+    </div>
+    <lightning:button variant="Search" label="Search" title="Base action" />
+    <lightning:button variant="Run" label="Run" title="Base action" onclick="{! c.method1}" />
+    <lightning:button variant="Num" label="Num" title="Base action" onclick="{! c.method2}" />
+    <lightning:button variant="country" label="country" title="Base action" onclick="{! c.method3}" />
+</aura:component>

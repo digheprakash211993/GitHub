@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <c:Auramethod  aura:id="prak"/>
+    
+    <lightning:button label="Call child method from parent cmp" onclick="{!c.Parentmethod}"/>
+</aura:component>

@@ -1,0 +1,28 @@
+<aura:component controller="cmpeventpartochild" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	 <c:childcompeventservices />
+    <br/>
+    <aura:handler name="cmpEvent" event="c:Parenttochildcompevent1" action="{!c.handleComponentEvent}"/>
+   
+    <aura:attribute name="hotelname" type="string" />
+    <aura:attribute name="hottname" type="list" />
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped" aria-labelledby="element-with-table-label other-element-with-table-label">
+    <thead>
+        <tr>
+        <th>Name</th>
+             <th>Service Name</th>
+        </tr>
+   </thead>
+        <aura:iteration items="{!v.hottname}" var="row">
+             <aura:iteration items="{!row.Services__r}" var="row1">
+    <tbody>
+        <tr>
+        <td>{!row1.Name}</td><td>{!row.Name}</td>
+        </tr>   
+    </tbody>
+    </aura:iteration>
+    </aura:iteration>
+    
+    
+    </table>
+    
+</aura:component>

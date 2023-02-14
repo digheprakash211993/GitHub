@@ -1,0 +1,27 @@
+<aura:component controller="customevent" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:registerEvent name="appEvent" type="c:EventcustApplicationevent1"/>
+    <aura:attribute name="Tableshow" type="list" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+ 
+    <div>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+    <thead>
+          <tr>   
+           <th>Name</th>    
+        </tr>
+    </thead>
+     
+        <aura:iteration items="{!v.Tableshow}" var="item">
+    <tbody>
+   
+              <a href="javascript:void(0);" onclick="{! c.mymethod }" data-id="{!item.Id}">
+            <tr> 
+                  <td>{!item.Name}</td>    
+        </tr>
+             </a>
+     </tbody>
+            </aura:iteration>
+ </table>
+   </div> 
+  
+</aura:component>

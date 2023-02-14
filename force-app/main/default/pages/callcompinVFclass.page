@@ -1,0 +1,13 @@
+<apex:page >
+        <apex:includeLightning />
+            <div id="idtag"/>
+            <script>
+            $Lightning.use("c:callcompinVFapp",function(){
+            $Lightning.createComponent("c:callcompinVF",{str:'Salesforce'},"idtag",function(cmp){
+            alert('inside VF Page');
+            });
+            });
+     
+            </script>
+       
+</apex:page>

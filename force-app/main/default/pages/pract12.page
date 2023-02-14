@@ -1,0 +1,8 @@
+<apex:page controller="pract12" >
+    <apex:form >
+    <apex:pageBlock >
+       <apex:commandButton value="Insert rec" action="{!demo}"/>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

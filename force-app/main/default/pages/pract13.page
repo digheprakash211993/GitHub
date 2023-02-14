@@ -1,0 +1,12 @@
+<apex:page controller="pract13">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="show record" action="{!demo}"/>
+        <apex:pageBlockTable value="{!str}" var="acc">
+        <apex:column value="{!acc.name}"/>
+         <apex:column value="{!acc.Hotel_MD__c}"/>
+             <apex:column value="{!acc.Hotel_prise__c}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

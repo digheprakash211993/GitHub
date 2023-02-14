@@ -1,0 +1,5 @@
+<aura:component controller="pract12class" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+<lightning:input type="Text" value="" label="Enter a date" aura:id="idtag" />
+<lightning:button variant="base" label="Input Enter" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

@@ -1,0 +1,14 @@
+<apex:page controller="picklistdyn">
+    <apex:form >
+    <apex:pageBlock title="Pick list">
+        <apex:commandButton value="search" action="{!demo}"/>
+        <apex:selectList size="1" value="{!str}">
+         <apex:selectOptions value="{!selist}">
+        
+        
+        </apex:selectOptions>
+        </apex:selectList>
+       
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

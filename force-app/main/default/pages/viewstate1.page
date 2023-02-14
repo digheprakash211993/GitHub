@@ -1,0 +1,13 @@
+<apex:page controller="viewstate">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:inputField value="{!obj.Name}"/>
+            <apex:inputField value="{!obj.Email_Id__c}"/>
+            <apex:inputField value="{!obj.Phone_No__c}"/>
+        <apex:commandButton value="insert rec" action="{!demo}"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

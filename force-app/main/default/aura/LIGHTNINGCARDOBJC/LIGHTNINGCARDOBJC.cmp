@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="slds-size_2-of-4 ">
+    <lightning:card footer="Card Footer" title="Hello">
+        <aura:set attribute="footer">
+            <lightning:button label="Add To Cart"/>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button label="New"/>
+        </aura:set>
+        
+        <div class="slds-grid slds-gutters">
+  <div class="slds-col">
+    <span><img src="{!$Resource.Car}"/></span>
+  </div>
+  <div class="slds-col">
+    <span>
+        <b>Name: BMW CAR</b><br/>
+      <b>Price: 2 Crore</b><br/>
+      <b>Colour: Black</b><br/>
+      <b>Avarage: 30Km/Ltr</b><br/>
+      
+      </span>
+  </div>
+</div>
+            
+        
+    </lightning:card>
+        </div>
+</aura:component>
